@@ -56,7 +56,7 @@ nav {
     display: none;
   }
 #nav-burger-menu{
-    display: flex;
+    display: none;
     flex-direction: column;
     position: fixed;
     right:0;
