@@ -1,0 +1,1173 @@
+html,
+body {
+
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-width: 500px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+header {
+    display: block;
+    background-color: skyblue;
+    height: 12vh;
+
+}
+
+nav {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    align-items: center;
+    justify-content: start;
+
+
+}
+
+.call{
+    display: flex;
+    color:white;
+    align-items: center;
+    justify-content: end;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 8vh;
+    padding-right: 5vw;
+    /* border: 1px solid red; */
+    z-index: 10;
+    bottom: 0;
+}
+
+/* burger menu */
+
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    display: none;
+  }
+#nav-burger-menu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right:0;
+    top:9vh;
+    padding: 1vh;
+    z-index: 100;
+    background-color: gray;
+
+}
+
+#nav-burger-menu .menu-items{
+    border-top: 1px solid white;
+}
+
+#company-logo-container {
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 20vh;
+    /* border: 1px solid red; */
+    /* background-color: blue; */
+
+}
+
+
+#company-logo {
+    text-align: center;
+    height: 30%;
+    width: 100%;
+    background-image: url(https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/tprhoiglqzbp9mbu8x8s/jhsereno-light);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* border: 1px solid red; */
+
+}
+
+
+
+#nav-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 10vh;
+    width: 80%;
+    /* background-color:green; */
+}
+
+.menu-items {
+    /* background-color: blue; */
+    /* border: 1px solid white; */
+    padding: 5px;
+    font-size: 2vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8vh;
+}
+
+.menu-items>a:hover {
+    font-size: 2.1vh;
+}
+
+main {
+    width: 100%;
+    /* background-color: pink; */
+    height: auto;
+
+}
+
+section {
+    height: 88vh;
+    width: 100%;
+
+}
+
+#title-section {
+    background-color: yellow;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjQxNDUyfQ&w=1920');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display:none; */
+
+}
+
+#title-container {
+    position: relative;
+    top: 40vh;
+    /* left: 35vw;  */
+    margin: auto;
+    color: white;
+    /* -webkit-text-stroke-color: black; */
+    /* -webkit-text-stroke-width: 1px; */
+    font-size: 12vh;
+    font-family: Georgia, Times, 'Times New Roman', sans-serif;
+    border-bottom: 3px groove white;
+    width: 50vh;
+    text-align: center;
+    /* background-color: linear-gradient(rgb(125, 117, 117, 1), rgb(125, 117, 117, 1)); */
+    /* border-radius: 3vh; */
+
+
+}
+
+/* plan section styling */
+
+#plan-section {
+    background-color: white;
+    height: 100vh;
+}
+
+#plan-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+    border-bottom: 1px solid gray;
+    /* border: 1px solid blue; */
+
+}
+
+#plan-title>span {
+
+    /* background-color: yellow; */
+    font-size: 5vh;
+    /* border: 1px solid red; */
+}
+
+#section-content-container {
+    /* background-color: pink; */
+    height: 85vh;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 0;
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+
+
+
+#card-responsive {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    align-items: end;
+    justify-content: end;
+
+}
+
+#card-syndication {
+    grid-column: 7/10;
+    grid-row: 1/3;
+    align-items: start;
+    justify-content: end;
+}
+
+#card-virtual-tour {
+
+    grid-column: 1/4;
+    grid-row: 4/6;
+    align-items: end;
+    justify-content: start;
+}
+
+#card-photography {
+    grid-column: 7/10;
+    grid-row: 4/6;
+    align-items: start;
+    justify-content: start;
+}
+
+#plan-image-container {
+    grid-column: 1/10;
+    grid-row: 1/6;
+
+  
+}
+
+#plan-image {
+    height: 80vh;
+    width: 30vw;
+    background-image: url("https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/hqguvxyyi5jciyrzy35v/page-3");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100vw;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+
+
+.plan-card-containers {
+    /* background-color: limegreen; */
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-cards {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    border-radius: 5vh;
+    padding: 2vh;
+    /* background-color: white; */
+}
+
+.plan-logo {
+    height: 10vh;
+    width: 10vh;
+    /* border: 1px solid red; */
+}
+
+.plan-logo>img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+    background-color: transparent;
+    mix-blend-mode: multiply;
+
+}
+
+.plan-card-title {
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+}
+
+.plan-card-text {
+
+    font-size: 2vh;
+    font-family: arial;
+    background-color: white;
+    padding-left: 2vh;
+    border-radius: 3vh;
+    
+
+}
+
+/************************* staginh section  **********************/
+
+#staging-section {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(145, 151, 153);
+    padding: 5vh;
+
+}
+
+#staging-content-container {
+
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: calc(100vw-10vh);
+
+
+}
+
+#staging-text {
+    height: 100%;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 3vh;
+    /* border: 1px solid blue; */
+}
+
+#staging-text-wrapper {
+    background-color: white;
+    padding: 20vh 3vh;
+    padding-top: 10vh;
+    border-radius: 5vh;
+    height: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+}
+
+#staging-text-title {
+    margin: 0 auto;
+}
+
+ul>li {
+    margin-bottom: 10px;
+}
+
+#staging-images {
+
+    width: 72%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.staging-images-rows {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.staging-images-item {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 2vh;
+    border-radius: 5vh;
+    margin-right: 3vh;
+}
+
+.staging-images-item>img {
+    height: 100%;
+    width: 100%;
+    border-radius: 4vh;
+}
+
+/********************* sell-buy sections ************************/
+
+#sell-buy-section {
+    height: 100vh;
+    width: 100vw;
+}
+
+#sell-buy-section-container {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 10vh;
+
+
+}
+
+.sell-buy-rows {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    padding: 1vh 0;
+    border-top: 1px solid gray;
+    /* border: 1px solid red; */
+
+}
+
+
+
+
+/* sell container */
+.sell-buy-wrapper {
+    height: 100%;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    left: 35%;
+
+}
+
+#sell-wrapper {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url('https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gihsg13plfsb8xfbzmlf/image-027');
+
+
+}
+
+#buy-wrapper {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url('https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/nhcjbdzbycjvfcks0nqe/image-004');
+
+
+}
+
+.step-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 90%;
+    height: 80%;
+
+
+}
+
+.process-container{
+    color: white;
+    padding-bottom: 4vh;
+    font-size: 6vh;
+}
+#buy-step, #sell-step{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+.step-card {
+    border-right: 1px solid white;
+    color: white;
+    padding-right: 3vh;
+    padding-left: 3vh;
+    font-size: 2vh;
+    height: 12vh;
+}
+
+.step-number {
+    font-size: 5vh;
+}
+
+/* ****************about section styling *******************/
+
+#about-section {
+
+    height: 100vh;
+    width: 100vw;
+}
+
+#about-section-container {
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+.arrow {
+    width: 5%;
+    height: 10%;
+    background-color: white;
+}
+
+#about-cards {
+    width: 90%;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.about-cards {
+    background-color: white;
+    height: 90%;
+    width: 80%;
+    padding: 2%;
+    border-radius: 5vh;
+
+}
+
+#about-card-1 {
+    display: flex;
+
+
+}
+
+#about-card-2 {
+    display: none;
+}
+
+#about-card-3 {
+    display: none;
+
+}
+
+
+.about-img-holder,
+.about-description-holder {
+    width: 40%;
+    height: 100%;
+    border-radius: 5vh;
+}
+
+.about-img-holder {
+    width: 40%;
+}
+
+.about-description-holder {
+    width: 60%;
+
+}
+
+#card-3-heading{
+    display: none;
+}
+
+.about-img-holder>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.about-description-holder {
+    padding: 5vh;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 60%;
+}
+
+.about-text-heading {
+    /* border: 1 px solid red; */
+    padding-bottom: 5vh;
+    font-weight: bold;
+    font-size: 5vh;
+    text-align: center;
+}
+
+#text-heading-3 {
+    font-size: 4vh;
+}
+
+#text-description-3 {
+    font-size: 2.5vh;
+}
+
+.about-text-description {
+    font-size: 2.5vh;
+    text-align: justify;
+}
+
+
+
+.arrow {
+    background-image: url(https://th.bing.com/th?id=OIP.-3S3RS7CH4o7YYMaw3JFWAHaIa&w=234&h=266&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode: multiply;
+    background-color: gray;
+}
+
+#arrow-right {
+    transform: scaleX(-1);
+}
+
+
+/* ************** marketing ************************/
+
+#marketing {
+    width: 100vw;
+    height: 100vh;
+    font-family: arial;
+
+}
+
+#marketing-section-container {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#market-section-title {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    padding-top: 10vh;
+
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+#market-top-card-title,
+.market-card-title {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#market-section-content {
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+#marketing-logos {
+    height: 15%;
+    width: 60%;
+    margin: auto;
+}
+
+#market-top-card {
+
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#market-bottom-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5%;
+
+}
+
+.market-bottom-cards {
+    width: 30%;
+    /* border: 1px solid red; */
+
+}
+.market-logo-cards{
+    width: 100%;
+}
+.market-logo-cards>img{
+    width: 100%;
+}
+
+#market-top-card-title,
+.market-card-title {
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+#marketing-logos {
+    text-align: center;
+}
+
+.market-card-content {
+    text-align: left;
+    text-align: justify;
+    hyphens: auto;
+
+}
+
+/*  ********************* partners/global section ******************  */
+
+#partners-section,
+#global-section {
+    height: 100vh;
+    width: 100vw;
+    border-top: 1px solid gray;
+}
+
+#global-section-container,
+#partners-section-container {
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+#global-image-container,
+#partners-image-container {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#global-image-container>img,
+#partners-image-container>img {
+    width: 100%;
+}
+
+#global-content-container,
+#partners-content-container {
+
+    background-color: white;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+}
+
+#partners-logos {
+
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners-logo-containers {
+    height: 100%;
+    width: 25%;
+
+}
+
+.partners-logo-containers>img {
+    height: 100%;
+    width: 100%;
+}
+
+.global-contents,
+#partners-contents {
+    padding-top: 10vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+
+}
+
+.partners-content-heads {
+    font-weight: bold;
+    padding: 2vh;
+    font-size: 3vh;
+    font-family: arial;
+
+}
+
+
+.partners-content-details {
+    padding-bottom: 5vh;
+}
+
+#global-content-container {
+    padding-top: 20vh;
+}
+
+/****************** work section *********************/
+
+
+#work-section {
+    height: 100vh;
+    width: 100 vw;
+    background-color: gray;
+
+
+}
+
+#work-section-container {
+    height: 100%;
+    width: 100%;
+    background-color: skyblue;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.45)), url('https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/skkve0aqzhkkyiytn92d/work-with-us');
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+
+}
+
+#work-text-containers {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    align-items: center;
+    justify-content: center;
+    font-family: arial;
+    color: white;
+
+
+}
+
+#work-title {
+    padding: 5vh;
+    font-size: 8vh;
+}
+
+#work-details {
+    font-size: 3vh;
+    padding-bottom: 5vh;
+}
+
+#work-link {
+    width: 20vh;
+    /* border: 1px solid red; */
+    height: 5vh;
+}
+
+#work-contact-button {
+    width: 100%;
+    height: 100%;
+
+}
+
+/************ contact styling *************/
+
+#contact-section {
+    height: 80vh;
+    width: 100vw;
+    background-color: white;
+
+}
+
+#contact-section-container {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+
+#contact-top,
+#contact-bottom {
+    height: 50%;
+    width: 100%;
+    /* border: 1px solid gray; */
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10vh;
+    ;
+
+}
+
+#top-right,
+#top-left,
+#bottom-right,
+#bottom-left {
+    width: 40%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.title-top {
+    font-size: 6vh;
+    padding: 1vh;
+    border-bottom: 1px solid black;
+}
+
+.text-top {
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    text-align: left;
+    text-align: justify;
+}
+
+form {
+    text-align: left;
+    width: 100%;
+}
+
+#input-box {
+    padding-bottom: 3vh;
+    width: 100%;
+    /* border-bottom: 1px soid blue; */
+}
+
+input[name="email-box"] {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+input[name="email-box"]:focus,
+input[name="email-box"]:active {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#bottom-left{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.title-bottom{
+    font-size: 2vh;
+    padding: 1vh;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+.text-bottom{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 2vh;
+    text-align: left;
+    text-align: justify;
+}
+
+#contact-address, #contact-infos{
+    width: 40%;
+}
+
+
+#bottom-right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    padding-top: 6vh;
+
+
+}
+#contact-logos{
+    width: 80%;
+    /* background-color: yellow; */
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contact-logo-containers{
+    height: 100%;
+    width: 15%;
+    /* background-color: blue; */
+    padding: 1vh;
+}
+
+.contact-logo-containers img{
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    height: 20vh;
+    /* background-color: gray; */
+
+}
+
+#footer-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1px;
+    
+
+}
+#top-footer{
+width: 100%;
+height: 35%;
+/* background-color: yellow; */
+padding-left: 10vh;
+background-color: white;
+}
+#footer-logos{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2vh;
+
+}
+
+.footer-logo-container{
+    height: 100%;
+    width: 20%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+
+}
+
+
+
+#fb-icon{
+    background-image: url("https://th.bing.com/th?id=OSK.6959dc0a9ea9a17f0991e79b4e692080&w=122&h=122&c=7&o=6&oif=webp&pid=SANGAM");
+}
+#linkedin-icon{
+    background-image:url("https://th.bing.com/th?id=OSK.HNYB5Zkp2MDvwR2nXmYMT4cVoTssZhyvU6zyn7sQOaGoGHc&w=102&h=102&c=7&o=6&oif=webp&pid=SANGAM") ;
+}
+
+#bottom-footer{
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8vh;
+    background-color: gray;
+
+}
+
+/* burger-appearance */
+@media only screen and (min-width: 801px){
+    #nav-burger-menu{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px ){
+
+    .burger{
+        display: flex;
+    }
+    #nav-menu-container{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+        padding-right: 5vw;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 1070px){
+#text-heading-3{
+    display: none;
+
+}
+.about-img-holder img{
+    height: 70%;
+    
+}
+
+#card-3-heading{
+    display: block;
+}
+#market-bottom-card-container{
+    flex-direction: column;
+    align-items: center;
+    
+}
+#marketing{
+    height: 200vh;
+}
+
+.market-bottom-cards{
+    width: 50%;
+}
+
+#market-section-title{
+    height: 10%;
+}
+}
+
+@media only screen and (max-width:900px){
+    
+#staging-text-list li{
+    font-size: 2.5vh;
+}
+
+.title-top{
+    font-size: 5vh;
+}
+
+#about-section{
+    height: 130vh;
+}
+    
+}
+
+@media only screen and (max-width: 700px){
+
+#staging-text-wrapper{
+    padding:10vh 3vh;
+}
+#staging-images{
+    width: 60%;
+}
+#staging-text{
+    width: 40%;
+}
+
+#about-section{
+    height: 150vh;
+}
+.about-img-holder img{
+    height: 50%;
+}
+
+#marketing-logos{
+    height: 2%;
+}
+
+#contact-top{
+    padding-top:5vh;
+    }
+
+.text-top{
+    font-size: 2.5vh;
+}
+
+}
+
